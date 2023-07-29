@@ -44,10 +44,16 @@ function cartesianPlane(x, y){
         console.log(`(${x}, ${y}) is in Quadrant 3`)
     } else if (x > 0 && y < 0){
         console.log(`(${x}, ${y}) is in Quadrant 4`)
+    } else if (x != 0 && y < 0){
+        console.log(`Y axis`)
+    } else if (x > 0 && y != 0) {
+        console.log(`Y axis`)
+    } else {
+        console.log(`Center`)
     }
 }
 
-cartesianPlane(-3, 2);
+cartesianPlane(0, 78978978978);
 
 
 function isATriangle(sideA, sideB, sideC) {
@@ -88,14 +94,7 @@ function cellData (planLimit, day, usage){
     } else {
         console.log(`${day} days in, with ${daysLeft} remaining. Plan average daily use: ${dailyRounded}. Your daily use: ${yourAverageRounded}. At this rate, you will reach ${exceededData} data on the final day.`)
     }
-
-    
-    /* planLimit - useage = dataleft 
-        dataleft / day = youraverage
-        planlimit/ 30 = dailyAverage
-        dailyAverage - youraverage = exceeding or not
-         */
     
 }
 
-cellData(100, 15, 49);
+cellData(1500, 3, 99);
